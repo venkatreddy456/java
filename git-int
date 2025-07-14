@@ -1,0 +1,52 @@
+⭐ Git Interview Questions and Answers
+1. What is Git?
+Git is a distributed version control system used to track changes in source code during software development. It allows multiple developers to work on a project simultaneously. Git maintains a complete history of changes and enables branching, merging, and collaboration.
+
+2. What is the difference between Git and GitHub?
+Git is a command-line tool used for version control, while GitHub is a web-based platform that hosts Git repositories. Git manages code locally and GitHub provides remote collaboration, issue tracking, and project management features.
+
+3. How do you initialize a Git repository?
+We use the command git init inside a project directory to initialize a Git repository. It creates a hidden .git folder that stores all the metadata and version history. After that, we can start tracking files using git add and git commit.
+
+4. What is the difference between git pull and git fetch?
+git fetch downloads changes from the remote repository but does not merge them automatically. git pull is a combination of git fetch and git merge, which brings changes and merges them into the current branch.
+
+5. What are branches in Git?
+A branch in Git is an independent line of development. It allows us to work on features, fixes, or experiments without affecting the main codebase. We can create a branch using git branch <branch-name>.
+
+6. How do you merge branches in Git?
+To merge a branch, we first switch to the target branch using git checkout, then run git merge <source-branch>. Git combines the histories and resolves any conflicts before finalizing the merge.
+
+7. What is a merge conflict? How do you resolve it?
+A merge conflict happens when Git can’t automatically merge changes from different branches. We resolve it by manually editing the conflicting files, then adding and committing them after fixing.
+
+8. What is the difference between git reset, git revert, and git checkout?
+
+git reset undoes commits by moving the HEAD pointer.
+
+git revert creates a new commit to undo changes without altering history.
+
+git checkout is used to switch branches or restore files from a specific commit.
+
+9. How do you undo the last commit in Git?
+We can undo the last commit using git reset --soft HEAD~1 to keep the changes staged, or git reset --hard HEAD~1 to delete the changes completely. Use it carefully as it may affect commit history.
+
+10. What is .gitignore file?
+The .gitignore file tells Git which files or directories to ignore in a repository. This helps prevent unwanted files like logs, temp files, and compiled code from being committed.
+
+11. What is the staging area in Git?
+The staging area is where we prepare changes before committing them. Files are added to it using git add, and then saved to the repository using git commit.
+
+12. How can you see the commit history in Git?
+We use git log to view the commit history. It shows the commit hash, author, date, and message. Options like --oneline or --graph can simplify or visualize the log.
+
+13. What is the difference between origin and upstream in Git?
+origin is the default name for your main remote repository. upstream usually refers to the original repository from which your fork is made. This helps in tracking and syncing with the parent repo.
+
+14. How do you clone a repository?
+We use the git clone <repo-url> command to copy a remote repository to our local system. It sets up all branches and tracking info for collaboration.
+
+15. How do you tag a commit in Git?
+We use git tag <tagname> to create a tag on the latest commit. Tags are useful for marking releases or important milestones. Use git push origin <tag> to push the tag to remote.
+
+
